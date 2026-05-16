@@ -1,3 +1,5 @@
+$ cat /home/user/infiniteportfolio/data.jsx
+
 /* Portfolio data — islands positioned on the infinite canvas.
    Coordinates are in canvas-space px. The canvas auto-centers on load. */
 
@@ -80,6 +82,33 @@ const PROJECTS = [
     quote: '"I finish reports before I\'m back at the bike."',
     quoteWho: 'Verifier, Nashik',
   },
+  {
+    id: 'parakh',
+    code: '04',
+    name: 'Parakh',
+    title: 'Piramal Parakh — Legal Verification Redesign',
+    client: 'Piramal Capital',
+    audience: 'For CPAs, advocates & credit approvers in lending',
+    year: '2024',
+    role: 'Sole UX Designer (end-to-end IC)',
+    duration: '[PLACEHOLDER — ADD DURATION]',
+    team: '1 Designer · 1 Business SPOC',
+    tags: ['B2B Internal', 'Legal-tech', 'Fintech', 'Solo IC'],
+    thumbLabel: '[SCREENSHOT: Parakh case study thumbnail]',
+    summary: 'From 3 days to 2 hours — solo IC redesign across 400+ branches.',
+    lede: 'Redesigning legal verification for India\'s lending industry as a solo IC across 400+ branches and 510 external advocates.',
+    problem: 'Legal verification was a 3-day p75 bottleneck blocking loan disbursal. Approvers were buried in inconsistent 7-page reports from 510 external advocates across 400+ branches.',
+    research: 'One week, no budget, two channels: in-branch shadowing and vendor calls. Shadowed 3 CPAs, interviewed 5–8 advocates, and spoke with the Legal Head. Power BI analytics gave us a p75 baseline of 3 days.',
+    design: 'A unified platform replacing SFDC + email chains. Advocates fill only variable fields on a pre-filled template. CPAs shift from relay to intake. Approvers see decision-critical signals surfaced at the top.',
+    outcomes: [
+      { big: '3d→2h', lab: 'LSR TAT (p75)' },
+      { big: '₹5 Cr', lab: 'Annual licensing savings' },
+      { big: '510', lab: 'Vendors on unified format' },
+      { big: '15–20m', lab: 'Approver decision time' },
+    ],
+    quote: '"My team is no longer buried in inconsistent reports — they\'re empowered to make high-quality risk assessments faster. This is the benchmark for digital transformation for us."',
+    quoteWho: 'Legal Head, Piramal Capital',
+  },
 ];
 
 const EXPERIENCE = [
@@ -102,10 +131,11 @@ const ISLANDS = [
   { id: 'photo',      kind: 'photo',     x: 920,  y: 1200 },
   { id: 'tools',      kind: 'tools',     x: 320,  y: 1660 },
 
-  { id: 'sec-work',   kind: 'section',   x: 1680, y: 900, num: '02 / Selected Work',  h1: 'Three problems,', em: 'in detail' },
+  { id: 'sec-work',   kind: 'section',   x: 1680, y: 900, num: '02 / Selected Work',  h1: 'Four problems,', em: 'in detail' },
   { id: 'proj-1',     kind: 'project',   x: 1680, y: 1260, project: PROJECTS[0] },
   { id: 'proj-2',     kind: 'project',   x: 2240, y: 1440, project: PROJECTS[1] },
   { id: 'proj-3',     kind: 'project',   x: 1700, y: 1960, project: PROJECTS[2] },
+  { id: 'proj-4',     kind: 'project',   x: 2260, y: 1980, project: PROJECTS[3] },
 
   { id: 'sec-exp',    kind: 'section',   x: 320,  y: 2200, num: '03 / Experience', h1: 'Six years of', em: 'learning loudly' },
   { id: 'timeline',   kind: 'timeline',  x: 360,  y: 2560 },
